@@ -11,7 +11,7 @@ jobs:
         python-version: 3.9.18
     - name: Install dependencies
       run: |
-        make install
+        make install-aws
     - name: Test with pytest
       run: |
         make test
