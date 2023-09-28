@@ -13,3 +13,24 @@ Create a virtualenv
 
 Source it
 ```source ~/.github-actions-demo/bin/activate```
+
+### Steps involved in setting up this project
+
+* Create a Github repo (if not already created)
+  - Create new AWS Cloud9 environment
+
+```bash
+install:
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+
+test:
+	python -m pytest -vv test_hello.py
+
+
+lint:
+	pylint --disable=R,C hello.py
+
+all: install lint test
+```
+
