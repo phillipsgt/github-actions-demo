@@ -2,7 +2,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-install-gcp:
+install-gcp1:
 	pip install --upgrade pip &&\
 		pip install -r requirements-gcp.txt
 
